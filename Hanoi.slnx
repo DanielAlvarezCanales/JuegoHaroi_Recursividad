@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Hanoi.Maui/Hanoi.Maui.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="Haroi.Console/Haroi.Console.csproj" />
+</Solution>
