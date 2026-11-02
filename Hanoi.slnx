@@ -2,5 +2,5 @@
   <Project Path="Hanoi.Maui/Hanoi.Maui.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
-  <Project Path="Haroi.Console/Haroi.Console.csproj" />
+  <Project Path="Haroi.Console/Haroi.Console.csproj" Id="c697ca5d-a4f7-407b-a2bf-88f050a1c69c" />
 </Solution>

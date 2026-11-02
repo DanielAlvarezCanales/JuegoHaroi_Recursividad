@@ -1,0 +1,156 @@
+Hanoi(4, A, C, B)
+│
+├── Hanoi(3, A, B, C)
+│   │
+│   ├── Hanoi(2, A, C, B)
+│   │   │
+│   │   ├── Hanoi(1, A, B, C)
+│   │   │   │
+│   │   │   ├── Hanoi(0, A, C, B)
+│   │   │   │       RETURN
+│   │   │   │       ↩ Hanoi(1, A, B, C)
+│   │   │   │
+│   │   │   ├── MOVIMIENTO 1: A → C
+│   │   │   │
+│   │   │   └── Hanoi(0, C, B, A)
+│   │   │           RETURN
+│   │   │           ↩ Hanoi(1, A, B, C)
+│   │   │           FIN de Hanoi(1, A, B, C)
+│   │   │           ↩ Hanoi(2, A, C, B)
+│   │   │
+│   │   ├── MOVIMIENTO 2: A → B
+│   │   │
+│   │   └── Hanoi(1, B, C, A)
+│   │       │
+│   │       ├── Hanoi(0, B, A, C)
+│   │       │       RETURN
+│   │       │       ↩ Hanoi(1, B, C, A)
+│   │       │
+│   │       ├── MOVIMIENTO 3: B → C
+│   │       │
+│   │       └── Hanoi(0, A, C, B)
+│   │               RETURN
+│   │               ↩ Hanoi(1, B, C, A)
+│   │               FIN de Hanoi(1, B, C, A)
+│   │               ↩ Hanoi(2, A, C, B)
+│   │
+│   │   FIN de Hanoi(2, A, C, B)
+│   │   ↩ Hanoi(3, A, B, C)
+│   │
+│   ├── MOVIMIENTO 4: A → C
+│   │
+│   └── Hanoi(2, C, B, A)
+│       │
+│       ├── Hanoi(1, C, A, B)
+│       │   │
+│       │   ├── Hanoi(0, C, B, A)
+│       │   │       RETURN
+│       │   │       ↩ Hanoi(1, C, A, B)
+│       │   │
+│       │   ├── MOVIMIENTO 5: C → A
+│       │   │
+│       │   └── Hanoi(0, B, A, C)
+│       │           RETURN
+│       │           ↩ Hanoi(1, C, A, B)
+│       │           FIN de Hanoi(1, C, A, B)
+│       │           ↩ Hanoi(2, C, B, A)
+│       │
+│       ├── MOVIMIENTO 6: C → B
+│       │
+│       └── Hanoi(1, A, B, C)
+│           │
+│           ├── Hanoi(0, A, C, B)
+│           │       RETURN
+│           │       ↩ Hanoi(1, A, B, C)
+│           │
+│           ├── MOVIMIENTO 7: A → C
+│           │
+│           └── Hanoi(0, C, B, A)
+│                   RETURN
+│                   ↩ Hanoi(1, A, B, C)
+│                   FIN de Hanoi(1, A, B, C)
+│                   ↩ Hanoi(2, C, B, A)
+│
+│       FIN de Hanoi(2, C, B, A)
+│       ↩ Hanoi(3, A, B, C)
+│
+├── MOVIMIENTO 8: A → B
+│
+└── Hanoi(3, B, C, A)
+    │
+    ├── Hanoi(2, B, A, C)
+    │   │
+    │   ├── Hanoi(1, B, C, A)
+    │   │   │
+    │   │   ├── Hanoi(0, B, A, C)
+    │   │   │       RETURN
+    │   │   │       ↩ Hanoi(1, B, C, A)
+    │   │   │
+    │   │   ├── MOVIMIENTO 9: B → C
+    │   │   │
+    │   │   └── Hanoi(0, A, C, B)
+    │   │           RETURN
+    │   │           ↩ Hanoi(1, B, C, A)
+    │   │           FIN de Hanoi(1, B, C, A)
+    │   │           ↩ Hanoi(2, B, A, C)
+    │   │
+    │   ├── MOVIMIENTO 10: B → A
+    │   │
+    │   └── Hanoi(1, C, A, B)
+    │       │
+    │       ├── Hanoi(0, C, B, A)
+    │       │       RETURN
+    │       │       ↩ Hanoi(1, C, A, B)
+    │       │
+    │       ├── MOVIMIENTO 11: C → A
+    │       │
+    │       └── Hanoi(0, B, A, C)
+    │               RETURN
+    │               ↩ Hanoi(1, C, A, B)
+    │               FIN de Hanoi(1, C, A, B)
+    │               ↩ Hanoi(2, B, A, C)
+    │
+    │   FIN de Hanoi(2, B, A, C)
+    │   ↩ Hanoi(3, B, C, A)
+    │
+    ├── MOVIMIENTO 12: B → C
+    │
+    └── Hanoi(2, A, C, B)
+        │
+        ├── Hanoi(1, A, B, C)
+        │   │
+        │   ├── Hanoi(0, A, C, B)
+        │   │       RETURN
+        │   │       ↩ Hanoi(1, A, B, C)
+        │   │
+        │   ├── MOVIMIENTO 13: A → C
+        │   │
+        │   └── Hanoi(0, C, B, A)
+        │           RETURN
+        │           ↩ Hanoi(1, A, B, C)
+        │           FIN de Hanoi(1, A, B, C)
+        │           ↩ Hanoi(2, A, C, B)
+        │
+        ├── MOVIMIENTO 14: A → B
+        │
+        └── Hanoi(1, B, C, A)
+            │
+            ├── Hanoi(0, B, A, C)
+            │       RETURN
+            │       ↩ Hanoi(1, B, C, A)
+            │
+            ├── MOVIMIENTO 15: B → C
+            │
+            └── Hanoi(0, A, C, B)
+                    RETURN
+                    ↩ Hanoi(1, B, C, A)
+                    FIN de Hanoi(1, B, C, A)
+                    ↩ Hanoi(2, A, C, B)
+
+        FIN de Hanoi(2, A, C, B)
+        ↩ Hanoi(3, B, C, A)
+
+    FIN de Hanoi(3, B, C, A)
+    ↩ Hanoi(4, A, C, B)
+
+FIN de Hanoi(4, A, C, B)
